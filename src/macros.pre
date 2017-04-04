@@ -1,0 +1,15 @@
+<?php
+
+macro ·recursion {
+    try {
+        ···try
+    } catch (T_VARIABLE·name) {
+        ···catch
+    }
+} >> {
+    try {
+        ···try
+    } catch (\Exception T_VARIABLE·name) {
+        ···catch
+    }
+}

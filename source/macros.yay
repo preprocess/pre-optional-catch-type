@@ -1,15 +1,15 @@
 <?php
 
-macro ·recursion {
+$(macro :recursion) {
     try {
-        ···try
-    } catch (T_VARIABLE·name) {
-        ···catch
+        $(layer() as try)
+    } catch ($(token(T_VARIABLE) as name)) {
+        $(layer() as catch)
     }
 } >> {
     try {
-        ···try
-    } catch (\Exception T_VARIABLE·name) {
-        ···catch
+        $(try)
+    } catch (\Exception $(name)) {
+        $(catch)
     }
 }

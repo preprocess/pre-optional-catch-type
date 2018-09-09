@@ -23,9 +23,5 @@
         }
     ],
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "scripts": {
-        "refresh-dependencies": "rm -rf composer.lock vendor && composer install",
-        "test": "vendor/bin/phpunit"
-    }
+    "prefer-stable": true
 }
